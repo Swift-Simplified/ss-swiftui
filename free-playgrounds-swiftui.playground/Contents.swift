@@ -102,7 +102,7 @@ struct ContentView: View {
 
 let viewModel = ViewModel(title:    "Swift Simplified", notifications: [
     Message(id: "1", title:    "Swift Playgrounds", description: """
-                                    playgrounds are incredible and support fast
+                                    Playgrounds are incredible and support fast
                                     learning as they encourage fast development
                                     of an idea and viewing the immediate results.
                                     """),
