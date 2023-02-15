@@ -12,11 +12,44 @@
 //: ## Welcome 👋🏿👋🏻👋🏽
 //: Welcome to a small playground demonstrating SwiftUI.
 //:
-//: Execute the run point 🔵 below, edit and experiment with the code! Don't stop writing code until you can see why things work the way they do. #practice #practice #practice
+//: Execute the run points 🔵 below, edit and experiment with the code! Don't stop writing code until you can see why things work the way they do. #practice #practice #practice
 //:
-//: 👉 Let's write some code to show the visual side of some business logic.
+//: ## Adding A SwiftUI View
+//: The example below creates a SwiftUI `View` and sets it to  the live view for this Swift playground.
 //:
-//: 💡 Tip: The UI *(User Interface)* should always be "dumb" and be led by a data model such as a "view model", taken from the "MVVM" design pattern. 😎
+//: 👉 Execute the next run point to display the `View` and experiment with the code below.
+// MARK: - 📦 Sourcecode
+import SwiftUI // import all the UI code
+import PlaygroundSupport // import the ability to use a live view
+
+class ViewModel1: ObservableObject {
+    let title: String
+    init(title: String) {
+        self.title = title
+    }
+}
+
+struct ContentView1: View {
+    
+    @StateObject var viewModel: ViewModel1
+    
+    var body: some View {
+        Text(viewModel.title)
+    }
+}
+
+// MARK: - ⚡️ Execution Area
+let viewModel1 = ViewModel1(title: "Learn Swift")
+let contentView1 = ContentView1(viewModel: viewModel1)
+PlaygroundPage.current.setLiveView(contentView1)
+// << 🔵 Run Point
+
+//: ## Advanced Solution
+//: The UI *(User Interface)* should always be "dumb" and be led by a data model such as a "view model".
+//:
+//: This design separates out the business logic from the `View` and is the type of acrchitecture that you'll find in industry!
+//:
+//: 👉 Let's add some more code and try to create a bigger `View` backed by an even bigger `ViewModel`.
 // MARK: - 📦 Sourcecode
 import SwiftUI // import all the UI code
 import PlaygroundSupport // import the ability to use a live view
@@ -33,8 +66,8 @@ protocol Footer {
 
 struct BrandedFooter: Footer {
     let text = """
-    Created by Matthew Harding
-    GitHub | Our Courses | Udemy.com
+    Created by Swift Simplified.com
+    Online Courses | Careers Advice | GitHub Repos
     
     🤩 ..let's live a better life,
     by learning Swift 🛠
@@ -65,6 +98,14 @@ class ViewModel: ObservableObject {
         self.agreementCompleted = agreementCompleted
         self.footer = footer
     }
+    
+    func userAgreementTriggered() {
+        agreementCompleted = true
+        print("✅ You WILL Learn Swift!")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.55, execute: {
+            print("😎... because you're amazing ✨")
+        })
+    }
 }
 
 struct ContentView: View {
@@ -88,11 +129,7 @@ struct ContentView: View {
         Spacer(minLength: spacing * 2)
         let buttonColor: Color = viewModel.agreementCompleted ? .green : .blue
         Button("I Will Learn Swift") {
-            print("✅ You WILL Learn Swift!")
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.55, execute: {
-                print("😎... because you're amazing ✨")
-            })
-            viewModel.agreementCompleted = true // doesn't refresh in a playground sadly - one shot execution
+            viewModel.userAgreementTriggered()
         }.foregroundColor(buttonColor).disabled(viewModel.agreementCompleted)
         Spacer(minLength: spacing * 4)
         Text(viewModel.footer.text).font(pageFooterFont)
@@ -132,12 +169,20 @@ PlaygroundPage.current.setLiveView(contentView)
 //: -------------------
 //: 🤩 **Congratulations** 🎉
 //:
-//: Generics is an advanced topic! - you're nailing it! 👏🏼👏🏾👏
+//: You learned something new - hopefully. 🤞
 //:
-//: Keep going!.. 🥳
+//: Use this playground to play about and edit the code - have some fun! It's a great opportunity to practice something new. 👏🏼👏🏾👏
 //:
 //: [Previous](@previous) | [Next](@next)
 //:
-//: ### Extra reading
-//: *Official Swift Language Guide: [Generics](https://github.com/MatthewpHarding/SWIFTDOCS-23-generics)*
+//: -------------------
+//: ## Created by [SwiftSimplified.com](https://www.swiftsimplified.com)
+//: This playground is intended as extra resource for students taking our Swift Simplified online course - or for anyone else learning Swift.
+//:
+//: ![instructor](instructor.png) Created by [Matthew Harding](https://github.com/MatthewpHarding) | [GitHub](https://github.com/MatthewpHarding)| [Website](https://www.swiftsimplified.com) | [Our Courses](https://www.udemy.com/user/iosbfree/)
+//:
+//: 🤩 *..let's live a better life, by learning Swift* 🛠
+//:
+//: ### 🧕🏻🙋🏽‍♂️👨🏿‍💼👩🏼‍💼👩🏻‍💻💁🏼‍♀️👨🏼‍💼🙋🏻‍♂️🙋🏻‍♀️👩🏼‍💻🙋🏿💁🏽‍♂️🙋🏽‍♀️🙋🏿‍♀️🧕🏾🙋🏼‍♂️
+
 
