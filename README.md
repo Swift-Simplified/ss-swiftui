@@ -1,6 +1,6 @@
 # SwiftUI In A Swift Playground 🛝
 
-Download this Swift playground file to run the example given in [Xcode](https://developer.apple.com/xcode).
+[Download](https://github.com/MatthewpHarding/FREE-PLAYGROUND-swiftui/archive/refs/heads/main.zip) this Swift playground file to run the example given in [Xcode](https://developer.apple.com/xcode).
 
 ## This Playground Teaches 👨🏻‍🏫
 How to create and display a SwiftUI view inside a Swift playground. 
