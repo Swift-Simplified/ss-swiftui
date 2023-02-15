@@ -51,9 +51,6 @@ PlaygroundPage.current.setLiveView(contentView1)
 //:
 //: 👉 Let's add some more code and try to create a bigger `View` backed by an even bigger `ViewModel`.
 // MARK: - 📦 Sourcecode
-import SwiftUI // import all the UI code
-import PlaygroundSupport // import the ability to use a live view
-
 struct Message: Hashable {
     let id: String
     let title: String
