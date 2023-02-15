@@ -170,8 +170,6 @@ PlaygroundPage.current.setLiveView(contentView)
 //:
 //: Use this playground to play about and edit the code - have some fun! It's a great opportunity to practice something new. 👏🏼👏🏾👏
 //:
-//: [Previous](@previous) | [Next](@next)
-//:
 //: -------------------
 //: ## Created by [SwiftSimplified.com](https://www.swiftsimplified.com)
 //: This playground is intended as extra resource for students taking our Swift Simplified online course - or for anyone else learning Swift.
