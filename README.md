@@ -1,4 +1,4 @@
-# SwiftUI In A Swift Playground 🛝
+# SwiftUI - in a Swift Playground 🛝
 
 [Download](https://github.com/MatthewpHarding/FREE-PLAYGROUND-swiftui/archive/refs/heads/main.zip) this Swift playground file to run the example given in [Xcode](https://developer.apple.com/xcode).
 
