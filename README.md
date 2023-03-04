@@ -1,4 +1,13 @@
-# SwiftUI - in a Swift Playground 🛝
+![Swift](readme-images/swift-simplified-logo.png)
+
+[SwiftSimplified.com](find-my-swift-version.md) | [Swift.org](https://docs.swift.org).
+
+Simplifying the official [Swift Language Guide](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/) into [The Swift Handbook 📖](https://www.swiftsimplified.com/the-swift-handbook). 😍
+
+![instructor](readme-images/instructor-profile.png) [*with Matthew Harding*](https://www.udemy.com/user/iosbfree/)
+# How To: 👈
+# Display A SwiftUI View 
+in a Swift playground 🛝
 
 [Download](https://github.com/MatthewpHarding/FREE-PLAYGROUND-swiftui/archive/refs/heads/main.zip) this Swift playground file to run the example given in [Xcode](https://developer.apple.com/xcode).
 

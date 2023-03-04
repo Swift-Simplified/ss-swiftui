@@ -10,10 +10,23 @@
 //:
 //: -------------------
 //: ## Welcome 👋🏿👋🏻👋🏽
-//: Welcome to a small playground demonstrating SwiftUI.
+//: Welcome to a small playground demonstrating how to display a SwiftUI `View` in a Swift playground.
 //:
-//: Execute the run points 🔵 below, edit and experiment with the code! Don't stop writing code until you can see why things work the way they do. #practice #practice #practice
+//: Execute the run points 🔵 below.
 //:
+//: Edit and experiment with the code!
+//:
+//: Don't stop writing code until you can see why things work the way they do.
+//-----code-play-area
+
+
+// #practice #practice #practice
+
+
+
+//-----code-play-area
+//:
+//: -------------------
 //: ## Adding A SwiftUI View
 //: The example below creates a SwiftUI `View` and sets it to  the live view for this Swift playground.
 //:
@@ -172,6 +185,8 @@ PlaygroundPage.current.setLiveView(contentView)
 //:
 //: -------------------
 //: ## Created by [SwiftSimplified.com](https://www.swiftsimplified.com)
+//: [SwiftSimplified.com](https://www.swiftsimplified.com)
+//:
 //: This playground is intended as extra resource for students taking our Swift Simplified online course - or for anyone else learning Swift.
 //:
 //: ![instructor](instructor.png) Created by [Matthew Harding](https://github.com/MatthewpHarding) | [GitHub](https://github.com/MatthewpHarding)| [Website](https://www.swiftsimplified.com) | [Our Courses](https://www.udemy.com/user/iosbfree/)
@@ -179,5 +194,3 @@ PlaygroundPage.current.setLiveView(contentView)
 //: 🤩 *..let's live a better life, by learning Swift* 🛠
 //:
 //: ### 🧕🏻🙋🏽‍♂️👨🏿‍💼👩🏼‍💼👩🏻‍💻💁🏼‍♀️👨🏼‍💼🙋🏻‍♂️🙋🏻‍♀️👩🏼‍💻🙋🏿💁🏽‍♂️🙋🏽‍♀️🙋🏿‍♀️🧕🏾🙋🏼‍♂️
-
-
